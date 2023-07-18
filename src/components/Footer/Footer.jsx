@@ -118,7 +118,8 @@ const footerStyles = css`
     flex-wrap: wrap;
     font-size: 14px;
     align-self: stretch;
-    position: relative;
+    position: fixed;
+    width: 100%;
     margin: 0px auto;
   }
   .footer_menu {
