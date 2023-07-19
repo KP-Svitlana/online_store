@@ -1,6 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { SignUpForm } from "../../components/SignUpForm";
-import { StyledTitle, StyledAfterTitle, StyledWrap } from "./SignUp.Styled";
+import {
+  StyledTitle,
+  StyledAfterTitle,
+  StyledWrap,
+  StyledLink,
+  StyledText,
+  StyledLinkWrap,
+} from "./SignUp.Styled";
 
 const SignUp = () => {
   return (
@@ -12,11 +19,14 @@ const SignUp = () => {
         </StyledAfterTitle>
 
         <SignUpForm />
-        <NavLink to="/" style={{ marginRight: "10px" }}>
-          Main
-        </NavLink>
-        <NavLink to="/login">Увійти</NavLink>
+        <StyledLinkWrap>
+          <StyledText>Уже є аккаунт?</StyledText>
+          <StyledLink to="/login">Увійти</StyledLink>
+        </StyledLinkWrap>
       </StyledWrap>
+      <NavLink to="/" style={{ marginRight: "10px" }}>
+        Main
+      </NavLink>
     </>
   );
 };
