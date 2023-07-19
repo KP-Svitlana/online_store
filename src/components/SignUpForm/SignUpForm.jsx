@@ -1,6 +1,11 @@
-import { Formik, Field } from "formik";
+import { Formik } from "formik";
 import { Button } from "../Button";
-import { StyledForm } from "./SignUpForm.styled";
+import { AuthField } from "../AuthField/AuthField";
+import {
+  StyledForm,
+  StyledInputWrap,
+  StyledBtnWrap,
+} from "./SignUpForm.styled";
 
 export const SignUpForm = () => {
   return (
@@ -12,48 +17,45 @@ export const SignUpForm = () => {
           email: "",
           tel: "",
           password: "",
+          toggle: false,
         }}
       >
         <StyledForm>
-          <label htmlFor="firstName">
-            Ім'я
-            <Field
-              id="firstName"
-              name="firstName"
-              placeholder="Ім'я"
-              type="text"
+          <StyledInputWrap>
+            <AuthField
+              name={"firstName"}
+              type={"text"}
+              placeholder={"Ім'я"}
+              labelName={"Ім'я"}
             />
-          </label>
-
-          <label htmlFor="lastName">
-            Прізвище
-            <Field
-              id="lastName"
-              name="lastName"
-              placeholder="Прізвище"
-              type="text"
+            <AuthField
+              name={"lastName"}
+              type={"text"}
+              placeholder={"Прізвище"}
+              labelName={"Прізвище"}
             />
-          </label>
-
-          <label htmlFor="email">
-            Email
-            <Field id="email" name="email" placeholder="Email" type="email" />
-          </label>
-          <label htmlFor="tel">
-            Email
-            <Field id="tel" name="tel" placeholder="+380" type="text" />
-          </label>
-          <label htmlFor="password">
-            Пароль
-            <Field
-              id="password"
-              name="password"
-              placeholder="Пароль"
-              type="text"
-            />
-          </label>
-
-          <Button text={"Зареєструватись"} />
+          </StyledInputWrap>
+          <AuthField
+            name={"email"}
+            type={"email"}
+            placeholder={"Email"}
+            labelName={"Email"}
+          />
+          <AuthField
+            name={"tel"}
+            type={"number"}
+            placeholder={"+380"}
+            labelName={"Телефон"}
+          />
+          <AuthField
+            name={"password"}
+            type={"password"}
+            placeholder={"Пароль"}
+            labelName={"Пароль"}
+          />
+          <StyledBtnWrap>
+            <Button text={"Зареєструватись"} />
+          </StyledBtnWrap>
         </StyledForm>
       </Formik>
     </>

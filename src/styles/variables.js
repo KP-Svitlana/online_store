@@ -1,10 +1,12 @@
 export const colors = {
-  primary: "#2652EF",
-  secondary: "#E8EDFF",
+  primary_accent: "#508750",
+  primary_background: "#FFFDFA",
+  secondary_dark: "#E8EDFF",
+  secondary_light: "#E8EDFF",
 };
 
 export const paletteGray = {
-  Gray_100: "#1F2933",
+  text: "#121412",
   Gray_80: "#3E4C59",
   Gray_60: "#616E7C",
   Gray_40: "#9AA5B1",
@@ -15,7 +17,7 @@ export const paletteGray = {
 };
 
 export const systemColors = {
-  error: "#FF3B30",
+  error: "#DA2121",
   info: "#7E42FE",
   warning: "#FFCC00",
   success: "#34C759",

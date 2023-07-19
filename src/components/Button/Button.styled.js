@@ -4,12 +4,11 @@ import { colors, paletteGray } from "../../styles/variables";
 export const StyledButton = styled.button`
   max-width: 276px;
   border: none;
-  background-color: ${colors.primary};
+  background-color: ${colors.primary_accent};
   padding: 16px 64px;
   justify-content: center;
   align-items: center;
   color: ${paletteGray.Gray_0};
-  font-family: Gothic A1;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
