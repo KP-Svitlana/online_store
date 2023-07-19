@@ -27,3 +27,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
