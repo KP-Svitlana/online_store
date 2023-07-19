@@ -1,8 +1,8 @@
 export const colors = {
-  primary_accent: "#508750",
+  primary_main: "#508750",
   primary_background: "#FFFDFA",
-  secondary_dark: "#E8EDFF",
-  secondary_light: "#E8EDFF",
+  secondary_dark: "#326732",
+  secondary_Background: "#F8F2E8",
 };
 
 export const paletteGray = {
