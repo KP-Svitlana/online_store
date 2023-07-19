@@ -1,4 +1,5 @@
 import { Formik, Field } from "formik";
+import { Button } from "../Button";
 import { StyledForm } from "./SignUpForm.styled";
 
 export const SignUpForm = () => {
@@ -14,37 +15,45 @@ export const SignUpForm = () => {
         }}
       >
         <StyledForm>
-          <label htmlFor="firstName">Ім'я</label>
-          <Field
-            id="firstName"
-            name="firstName"
-            placeholder="Ім'я"
-            type="text"
-          />
+          <label htmlFor="firstName">
+            Ім'я
+            <Field
+              id="firstName"
+              name="firstName"
+              placeholder="Ім'я"
+              type="text"
+            />
+          </label>
 
-          <label htmlFor="lastName">Прізвище</label>
-          <Field
-            id="lastName"
-            name="lastName"
-            placeholder="Прізвище"
-            type="text"
-          />
+          <label htmlFor="lastName">
+            Прізвище
+            <Field
+              id="lastName"
+              name="lastName"
+              placeholder="Прізвище"
+              type="text"
+            />
+          </label>
 
-          <label htmlFor="email">Email</label>
-          <Field id="email" name="email" placeholder="Email" type="email" />
+          <label htmlFor="email">
+            Email
+            <Field id="email" name="email" placeholder="Email" type="email" />
+          </label>
+          <label htmlFor="tel">
+            Email
+            <Field id="tel" name="tel" placeholder="+380" type="text" />
+          </label>
+          <label htmlFor="password">
+            Пароль
+            <Field
+              id="password"
+              name="password"
+              placeholder="Пароль"
+              type="text"
+            />
+          </label>
 
-          <label htmlFor="tel">Email</label>
-          <Field id="tel" name="tel" placeholder="+380" type="text" />
-
-          <label htmlFor="password">Пароль</label>
-          <Field
-            id="password"
-            name="password"
-            placeholder="Пароль"
-            type="text"
-          />
-
-          <button type="submit">Submit</button>
+          <Button text={"Зареєструватись"} />
         </StyledForm>
       </Formik>
     </>
