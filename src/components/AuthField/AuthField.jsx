@@ -4,6 +4,7 @@ import {
   StyledInputWrap,
   StyledInput,
   StyledIconBtn,
+  StyledStar,
 } from "./AuthField.styled";
 import { paletteGray } from "../../styles/variables";
 import { ReactComponent as EyeCloseIcon } from "../../assets/svg/eyeClosed.svg";
@@ -18,7 +19,9 @@ export const AuthField = ({ name, type, placeholder = "", labelName }) => {
 
   return (
     <StyledInputWrap>
-      <StyledLabel htmlFor={name}>{labelName}</StyledLabel>
+      <StyledLabel htmlFor={name}>
+        {labelName} <StyledStar>*</StyledStar>
+      </StyledLabel>
       <StyledInput
         id={name}
         name={name}

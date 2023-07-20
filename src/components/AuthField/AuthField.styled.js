@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { paletteGray } from "../../styles/variables";
+import { Field } from "formik";
 
 export const StyledInputWrap = styled.div`
   display: flex;
@@ -15,7 +16,15 @@ export const StyledLabel = styled.label`
   line-height: 17.5px;
   color: ${paletteGray.Gray_100};
 `;
-export const StyledInput = styled.input`
+
+export const StyledStar = styled.sup`
+  color: #da2121;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+`;
+export const StyledInput = styled(Field)`
   padding: 14px 12px;
   font-size: 16px;
   font-style: normal;
