@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import { colors, paletteGray } from "../../styles/variables";
+import { Field } from "formik";
 
 export const StyledForm = styled.form`
   display: flex;
@@ -13,15 +15,27 @@ export const StyledInputWrap = styled.div`
 `;
 
 export const StyledLabel = styled.label`
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-family: Gothic A1;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 17.5px;
-  padding: 0;
+  line-height: 1.25;
+  color: ${paletteGray.text};
+`;
+
+export const StyledChekbox = styled(Field)`
+  width: 16px;
+  height: 16px;
+
+  :focus-visible {
+    outline: 0px solid transparent;
+  }
+`;
+
+export const StyledChekboxWrap = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justifu-content: center;
 `;
 
 export const StyledBtnWrap = styled.div`

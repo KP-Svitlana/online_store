@@ -50,4 +50,6 @@ export const StyledLinkWrap = styled.div`
   gap: 16px;
   margin: 0 auto;
   margin-top: 20px;
+  align-items: center;
+  justifu-content: center;
 `;
