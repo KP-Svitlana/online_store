@@ -1,10 +1,13 @@
-import { Formik } from "formik";
+import { Formik, Field } from "formik";
 import { Button } from "../Button";
 import { AuthField } from "../AuthField/AuthField";
 import {
   StyledForm,
   StyledInputWrap,
   StyledBtnWrap,
+  StyledLabel,
+  StyledChekboxWrap,
+  StyledChekbox,
 } from "./SignUpForm.styled";
 
 export const SignUpForm = () => {
@@ -53,6 +56,16 @@ export const SignUpForm = () => {
             placeholder={"Пароль"}
             labelName={"Пароль"}
           />
+          <StyledChekboxWrap>
+            <StyledChekbox
+              id={"checkbox"}
+              name={"checkbox"}
+              type={"checkbox"}
+            />
+            <StyledLabel htmlFor={"checkbox"}>
+              Я погоджуюсь з Privacy policy
+            </StyledLabel>
+          </StyledChekboxWrap>
           <StyledBtnWrap>
             <Button text={"Зареєструватись"} />
           </StyledBtnWrap>
