@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { StyledFooter, StyledFooterMenu, StyledFooterLinks, StyledFooterImage, StyledFooterContacts, StyledFooterAddress, StyledFooterAddressText,StyledFooterPhone,StyledFooterPhoneNum,StyledFooterEmail,StyledFooterEmailExa,StyledFooterTime,StyledFooterNav,StyledFooterShop,StyledFooterShopTitle,StyledFooterMenuItem,StyledFooterItemMenu,StyledFooterCompany,StyledFooterHelp,StyledFooterLine,StyledLineFooter,StyledFooterCopy,StyledFooterLink,StyledFooterPrivacy,StyledFooterTerms  } from "./Footer.styled";
-import logoImage from './icons/Logo.png';
+import logoImage from '/src/assets/img/logo.png';
 
 export const Footer = () => {
   return (
@@ -28,22 +28,22 @@ export const Footer = () => {
           <StyledFooterShopTitle>МАГАЗИН</StyledFooterShopTitle>
           <StyledFooterMenuItem>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Новинки</NavLink>
+              <NavLink to="#" activeclassname="active">Новинки</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Каталог</NavLink>
+              <NavLink to="#" activeclassname="active">Каталог</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Колекції</NavLink>
+              <NavLink to="#" activeclassname="active">Колекції</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Взуття</NavLink>
+              <NavLink to="#" activeclassname="active">Взуття</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Аксесуари</NavLink>
+              <NavLink to="#" activeclassname="active">Аксесуари</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Розпродаж</NavLink>
+              <NavLink to="#" activeclassname="active">Розпродаж</NavLink>
             </StyledFooterItemMenu>
           </StyledFooterMenuItem>
         </StyledFooterShop>
@@ -51,19 +51,19 @@ export const Footer = () => {
           <StyledFooterShopTitle>КОМПАНІЯ</StyledFooterShopTitle>
           <StyledFooterMenuItem>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Про нас</NavLink>
+              <NavLink to="#" activeclassname="active">Про нас</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Контакти</NavLink>
+              <NavLink to="#" activeclassname="active">Контакти</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Відгуки</NavLink>
+              <NavLink to="#" activeclassname="active">Відгуки</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Оферта</NavLink>
+              <NavLink to="#" activeclassname="active">Оферта</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Блог</NavLink>
+              <NavLink to="#" activeclassname="active">Блог</NavLink>
             </StyledFooterItemMenu>
           </StyledFooterMenuItem>
         </StyledFooterCompany>
@@ -71,25 +71,25 @@ export const Footer = () => {
           <StyledFooterShopTitle>ДОПОМОГА</StyledFooterShopTitle>
           <StyledFooterMenuItem>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Оформлення замовлень</NavLink>
+              <NavLink to="#" activeclassname="active">Оформлення замовлень</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Доставка і оплата</NavLink>
+              <NavLink to="#" activeclassname="active">Доставка і оплата</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Гарантія та повернення</NavLink>
+              <NavLink to="#" activeclassname="active">Гарантія та повернення</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Умови акцій</NavLink>
+              <NavLink to="#" activeclassname="active">Умови акцій</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">FAQ</NavLink>
+              <NavLink to="#" activeclassname="active">FAQ</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Terms&amp;Conditions</NavLink>
+              <NavLink to="#" activeclassname="active">Terms&amp;Conditions</NavLink>
             </StyledFooterItemMenu>
             <StyledFooterItemMenu>
-              <NavLink to="#" activeClassName="active">Політика конфіденційності</NavLink>
+              <NavLink to="#" activeclassname="active">Політика конфіденційності</NavLink>
             </StyledFooterItemMenu>
           </StyledFooterMenuItem>
         </StyledFooterHelp>

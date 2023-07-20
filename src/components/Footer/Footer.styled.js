@@ -12,8 +12,7 @@ export const StyledFooter = styled.footer`
     width: 100%;
     min-height: 100vh;
     padding: 120px 0 20px 0;
-    text-decoration: none;
-    color: inherit;
+    align-content: flex-end;
 `;
 export const StyledFooterMenu = styled.div`
     display: flex;
@@ -158,7 +157,7 @@ export const StyledFooterLine = styled.div`
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: auto;
+    margin-top: 100px;
     width: 100%;
     position: relative;
 `;
