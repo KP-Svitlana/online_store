@@ -7,7 +7,7 @@ export const Logo = () => {
             src: 'source for img',
             alt: 'Logo'
         }
-    ]
+    ];
 
     return (
         <div>
