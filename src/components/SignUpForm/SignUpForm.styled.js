@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
-import { colors, paletteGray } from "../../styles/variables";
+import { paletteGray } from "../../styles/variables";
 import { Field } from "formik";
+import { device } from "../../styles/mediaVeriables";
 
 export const StyledForm = styled.form`
   display: flex;
@@ -11,7 +12,14 @@ export const StyledForm = styled.form`
 
 export const StyledInputWrap = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 20px;
+
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 `;
 
 export const StyledLabel = styled.label`

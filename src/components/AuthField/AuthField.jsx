@@ -44,6 +44,7 @@ export const AuthField = ({ name, type, placeholder = "", labelName }) => {
                 width: "24px",
                 hieght: "24px",
                 color: `${paletteGray.Gray_80}`,
+                cursor: "pointer",
               }}
             />
           )}
