@@ -20,5 +20,6 @@ export const StyledButton = styled.button`
   :hover,
   :focus {
     background-color: ${colors.secondary_dark};
+    transform: scale(1.15);
   }
 `;
