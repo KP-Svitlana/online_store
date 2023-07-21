@@ -3,16 +3,14 @@ import styled from "@emotion/styled";
 export const StyledFooter = styled.footer`
     display: flex;
     flex-direction: row;
-    height: 558px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
     font-size: 14px;
-    align-self: stretch;
+    align-content: flex-end;
     width: 100%;
     min-height: 100vh;
-    padding: 120px 0 20px 0;
-    align-content: flex-end;
+    padding: 0 30px 20px 30px;
 `;
 export const StyledFooterMenu = styled.div`
     display: flex;
@@ -84,7 +82,7 @@ export const StyledFooterTime = styled.div`
 export const StyledFooterNav = styled.nav`
     display: flex;
     flex-direction: row;
-    gap: 86px;
+    gap: 66px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -151,15 +149,24 @@ export const StyledFooterHelp = styled.div`
     flex-shrink: 0;
     position: relative;
 `;
+export const StyledFooterIconItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+`;
 export const StyledFooterLine = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 100px;
     width: 100%;
     position: relative;
+    margin-top: 80px;
 `;
 export const StyledLineFooter = styled.div`
     border-style: solid;

@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { StyledFooter, StyledFooterMenu, StyledFooterLinks, StyledFooterImage, StyledFooterContacts, StyledFooterAddress, StyledFooterAddressText,StyledFooterPhone,StyledFooterPhoneNum,StyledFooterEmail,StyledFooterEmailExa,StyledFooterTime,StyledFooterNav,StyledFooterShop,StyledFooterShopTitle,StyledFooterMenuItem,StyledFooterItemMenu,StyledFooterCompany,StyledFooterHelp,StyledFooterLine,StyledLineFooter,StyledFooterCopy,StyledFooterLink,StyledFooterPrivacy,StyledFooterTerms  } from "./Footer.styled";
+import { StyledFooter, StyledFooterMenu, StyledFooterLinks,StyledFooterIconItem, StyledFooterImage, StyledFooterContacts, StyledFooterAddress, StyledFooterAddressText,StyledFooterPhone,StyledFooterPhoneNum,StyledFooterEmail,StyledFooterEmailExa,StyledFooterTime,StyledFooterNav,StyledFooterShop,StyledFooterShopTitle,StyledFooterMenuItem,StyledFooterItemMenu,StyledFooterCompany,StyledFooterHelp,StyledFooterLine,StyledLineFooter,StyledFooterCopy,StyledFooterLink,StyledFooterPrivacy,StyledFooterTerms  } from "./Footer.styled";
 import logoImage from '/src/assets/img/logo.png';
+import { SocialList } from "../SocialList/SocialList";
+import { PaymentList } from '../PaymentList/PaymentList';
 
 export const Footer = () => {
   return (
@@ -93,6 +95,10 @@ export const Footer = () => {
             </StyledFooterItemMenu>
           </StyledFooterMenuItem>
         </StyledFooterHelp>
+        <StyledFooterIconItem>
+          <SocialList />
+          <PaymentList />
+        </StyledFooterIconItem>
       </StyledFooterNav>
       <StyledFooterLine>
         <StyledLineFooter></StyledLineFooter>
