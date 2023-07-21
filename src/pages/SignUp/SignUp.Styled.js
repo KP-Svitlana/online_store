@@ -1,6 +1,25 @@
 import styled from "@emotion/styled";
-import { colors, paletteGray } from "../../styles/variables";
 import { Link } from "react-router-dom";
+
+import { colors, paletteGray } from "../../styles/variables";
+import { device } from "../../styles/mediaVeriables";
+
+export const StyledPageWrap = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 64px;
+  padding: 16px;
+
+  @media ${device.tabletOnly} {
+    padding: 32px;
+  }
+
+  @media ${device.desktop} {
+    flex-direction: row;
+    gap: 100px;
+    padding: 80px;
+  }
+`;
 
 export const StyledTitle = styled.h2`
   font-size: 28px;
@@ -10,7 +29,7 @@ export const StyledTitle = styled.h2`
   letter-spacing: 2px;
   color: ${paletteGray.text};
   margin: 0 auto;
-  margin-top: 49px;
+  margin-top: 27px;
 `;
 
 export const StyledAfterTitle = styled.p`
@@ -26,7 +45,6 @@ export const StyledAfterTitle = styled.p`
 export const StyledWrap = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 80px;
 `;
 
 export const StyledText = styled.p`
@@ -53,3 +71,10 @@ export const StyledLinkWrap = styled.div`
   align-items: center;
   justifu-content: center;
 `;
+
+export const StyledImg = styled.picture`
+  display: block;
+  // max-width: 640px;
+`;
+
+export const StyledImgWrap = styled.div``;
