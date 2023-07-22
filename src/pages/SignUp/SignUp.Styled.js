@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
 import { colors, paletteGray } from "../../styles/variables";
-import { device } from "../../styles/mediaVeriables";
+import { device, size } from "../../styles/mediaVeriables";
 
 export const StyledPageWrap = styled.div`
   display: flex;
@@ -73,8 +73,8 @@ export const StyledLinkWrap = styled.div`
 `;
 
 export const StyledImg = styled.picture`
-  display: block;
-  // max-width: 640px;
+  width: 100%;
+  height: auto;
 `;
 
 export const StyledImgWrap = styled.div``;
