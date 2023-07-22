@@ -42,12 +42,16 @@ const SignUp = () => {
         <StyledImgWrap>
           <StyledImg>
             <source
-              media={device.tabletBefore}
+              media={device.mobileOnly}
               srcSet={`${photo_m_1x} 1x, ${photo_m_2x} 2x`}
             />
             <source
-              media={device.tabletOnly}
+              media={device.tabletBefore}
               srcSet={`${photo_t_1x} 1x, ${photo_t_2x} 2x`}
+            />
+            <source
+              media={device.desktopBefore}
+              srcSet={`${photo_1x} 1x, ${photo_2x} 2x`}
             />
             <source
               media={device.desktop}
