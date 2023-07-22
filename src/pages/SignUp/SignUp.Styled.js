@@ -25,7 +25,7 @@ export const StyledWrap = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 49px 0;
+  padding: 46px 0;
 `;
 
 export const StyledTitle = styled.h2`
@@ -36,7 +36,6 @@ export const StyledTitle = styled.h2`
   letter-spacing: 2px;
   color: ${paletteGray.text};
   margin: 0 auto;
-  // margin-top: 27px;
 `;
 
 export const StyledAfterTitle = styled.p`
@@ -75,12 +74,6 @@ export const StyledLinkWrap = styled.div`
 `;
 
 export const StyledImg = styled.picture`
-  // display: block;
-  // width: 100%;
-  // height: auto;
-`;
-
-export const StyledImgWrap = styled.div`
-  // width: 100%;
-  // height: auto;
+  max-width: 100%;
+  height: auto;
 `;

@@ -10,7 +10,6 @@ import {
   StyledLinkWrap,
   StyledPageWrap,
   StyledImg,
-  StyledImgWrap,
 } from "./SignUp.Styled";
 
 import { device } from "../../styles/mediaVeriables";
@@ -39,27 +38,26 @@ const SignUp = () => {
           </StyledLinkWrap>
           <LoginByGoogle />
         </StyledWrap>
-        <StyledImgWrap>
-          <StyledImg>
-            <source
-              media={device.mobileOnly}
-              srcSet={`${photo_m_1x} 1x, ${photo_m_2x} 2x`}
-            />
-            <source
-              media={device.tabletBefore}
-              srcSet={`${photo_t_1x} 1x, ${photo_t_2x} 2x`}
-            />
-            <source
-              media={device.desktopBefore}
-              srcSet={`${photo_1x} 1x, ${photo_2x} 2x`}
-            />
-            <source
-              media={device.desktop}
-              srcSet={`${photo_1x} 1x, ${photo_2x} 2x`}
-            />
-            <img src={photo_m_1x} alt="Girl with a dress" />
-          </StyledImg>
-        </StyledImgWrap>
+
+        <StyledImg>
+          <source
+            media={device.mobileOnly}
+            srcSet={`${photo_m_1x} 1x, ${photo_m_2x} 2x`}
+          />
+          <source
+            media={device.tabletBefore}
+            srcSet={`${photo_t_1x} 1x, ${photo_t_2x} 2x`}
+          />
+          <source
+            media={device.desktopBefore}
+            srcSet={`${photo_1x} 1x, ${photo_2x} 2x`}
+          />
+          <source
+            media={device.desktop}
+            srcSet={`${photo_1x} 1x, ${photo_2x} 2x`}
+          />
+          <img src={photo_m_1x} alt="Girl with a dress" />
+        </StyledImg>
       </StyledPageWrap>
       <NavLink to="/" style={{ marginRight: "10px" }}>
         Main
