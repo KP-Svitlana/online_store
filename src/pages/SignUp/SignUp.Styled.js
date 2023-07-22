@@ -2,23 +2,30 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
 import { colors, paletteGray } from "../../styles/variables";
-import { device } from "../../styles/mediaVeriables";
+import { device, size } from "../../styles/mediaVeriables";
 
 export const StyledPageWrap = styled.div`
   display: flex;
   flex-direction: column-reverse;
   gap: 64px;
-  padding: 16px;
+  padding: 16px 0;
 
-  @media ${device.tabletOnly} {
-    padding: 32px;
+  @media ${device.tabletBefore} {
+    padding: 32px 0;
   }
 
   @media ${device.desktop} {
     flex-direction: row;
     gap: 100px;
-    padding: 80px;
+    padding: 80px 0;
   }
+`;
+
+export const StyledWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 49px 0;
 `;
 
 export const StyledTitle = styled.h2`
@@ -29,7 +36,7 @@ export const StyledTitle = styled.h2`
   letter-spacing: 2px;
   color: ${paletteGray.text};
   margin: 0 auto;
-  margin-top: 27px;
+  // margin-top: 27px;
 `;
 
 export const StyledAfterTitle = styled.p`
@@ -40,11 +47,6 @@ export const StyledAfterTitle = styled.p`
   color: ${paletteGray.text};
   margin: 0 auto;
   margin-top: 16px;
-`;
-
-export const StyledWrap = styled.div`
-  display: flex;
-  flex-direction: column;
 `;
 
 export const StyledText = styled.p`
@@ -73,8 +75,12 @@ export const StyledLinkWrap = styled.div`
 `;
 
 export const StyledImg = styled.picture`
-  display: block;
-  // max-width: 640px;
+  // display: block;
+  // width: 100%;
+  // height: auto;
 `;
 
-export const StyledImgWrap = styled.div``;
+export const StyledImgWrap = styled.div`
+  // width: 100%;
+  // height: auto;
+`;
