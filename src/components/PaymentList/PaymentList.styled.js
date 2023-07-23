@@ -1,42 +1,42 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+import { paletteGray } from "../../styles/variables";
+import { device } from "../../styles/mediaVeriables";
 
 export const StyledFooterPayment = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 `;
 export const StyledFooterPaymentText = styled.p`
-    text-align: left;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.3;
-    position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  @media ${device.tablet} {
+    font-weight: 600;
+    line-height: 1.25;
+  }
 `;
-export const StyledFooterPaymentIcons = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
+export const StyledFooterPaymentList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  list-style: none;
 `;
-export const StyledFooterPaymentMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-`;
-export const StyledFooterIconsPayment = styled.img`
-    width: 37px;
-    height: 22px;
+export const StyledFooterPaymentItem = styled.li`
+  border-radius: 4px;
+  border: 0.5px solid ${paletteGray.Gray_60};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
+export const StyledPaymentLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 11px;
+`;
