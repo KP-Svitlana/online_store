@@ -15,6 +15,7 @@ export const StyledFooterSocialText = styled.p`
     font-weight: 700;
     line-height: 1.3;
     position: relative;
+    letter-spacing: 1px;
 `;
 export const StyledFooterSocialIcons = styled.div`
     display: flex;
@@ -35,7 +36,7 @@ export const StyledFooterSocialMenu = styled.div`
     position: relative;
 `;
 export const StyledFooterIconsSocial = styled.img`
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
 `;
 

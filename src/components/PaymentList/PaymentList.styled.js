@@ -15,12 +15,12 @@ export const StyledFooterPaymentText = styled.p`
     font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
+    letter-spacing: 1px;
     position: relative;
 `;
 export const StyledFooterPaymentIcons = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 16px;
     align-items: center;
     justify-content: flex-start;
     flex-shrink: 0;
@@ -36,7 +36,11 @@ export const StyledFooterPaymentMenu = styled.div`
     position: relative;
 `;
 export const StyledFooterIconsPayment = styled.img`
-    width: 37px;
-    height: 22px;
+    width: 60px;
+    height: 30px;
+    @media (max-width: 768px) {
+        width: 48px;
+        height: 30px;
+    }
 `;
 

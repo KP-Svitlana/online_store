@@ -13,22 +13,42 @@ export const SocialList = () => {
                 <StyledFooterSocialIcons>
                     <StyledFooterSocialMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <FaceIcon />
+                        <FaceIcon 
+                        style={{
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                         </a>
                     </StyledFooterSocialMenu>
                     <StyledFooterSocialMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <InstaIcon />
+                        <InstaIcon 
+                        style={{
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                         </a>
                     </StyledFooterSocialMenu>
                     <StyledFooterSocialMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <TwittIcon />
+                        <TwittIcon 
+                        style={{
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                         </a>
                     </StyledFooterSocialMenu>
                     <StyledFooterSocialMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <YouIcon />
+                        <YouIcon 
+                        style={{
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                         </a>
                     </StyledFooterSocialMenu>
                 </StyledFooterSocialIcons>

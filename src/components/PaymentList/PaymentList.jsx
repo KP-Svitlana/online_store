@@ -13,22 +13,42 @@ export const PaymentList = () => {
                 <StyledFooterPaymentIcons>
                     <StyledFooterPaymentMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <AppleIcon />
+                        <AppleIcon 
+                        style={{
+                            width: "60px",
+                            height: "30px",
+                          }}
+                        />
                         </a>
                     </StyledFooterPaymentMenu>
                     <StyledFooterPaymentMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <GooglePayIcon />
+                        <GooglePayIcon 
+                        style={{
+                            width: "60px",
+                            height: "30px",
+                          }}
+                        />
                         </a>
                     </StyledFooterPaymentMenu>
                     <StyledFooterPaymentMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <MasterIcon />
+                        <MasterIcon 
+                        style={{
+                            width: "60px",
+                            height: "30px",
+                          }}
+                        />
                         </a>
                     </StyledFooterPaymentMenu>
                     <StyledFooterPaymentMenu>
                         <a href="#" target="_blank" rel="icon">
-                        <VisaIcon />
+                        <VisaIcon 
+                        style={{
+                            width: "60px",
+                            height: "30px",
+                          }}
+                        />
                         </a>
                     </StyledFooterPaymentMenu>
                 </StyledFooterPaymentIcons>
