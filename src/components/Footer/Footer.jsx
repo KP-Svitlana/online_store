@@ -133,7 +133,7 @@ export const Footer = () => {
 
       <StyledFooterNavMobile>
         <StyledDropDown>
-          <option value="help" autofocus>
+          <option value="help" autoFocus>
             ДОПОМОГА
           </option>
           <option value="order">Оформлення замовлень</option>
@@ -145,7 +145,7 @@ export const Footer = () => {
           <option value="policy">Політика конфеденційності</option>
         </StyledDropDown>
         <StyledDropDown>
-          <option value="help" autofocus>
+          <option value="help" autoFocus>
             МАГАЗИН
           </option>
           <option value="new">Новинки</option>
@@ -156,7 +156,7 @@ export const Footer = () => {
           <option value="sale">Розпродаж</option>
         </StyledDropDown>
         <StyledDropDown>
-          <option value="help" autofocus>
+          <option value="help" autoFocus>
             КОМПАНІЯ
           </option>
           <option value="about us">Про нас</option>
@@ -176,10 +176,10 @@ export const Footer = () => {
         <StyledFooterCopy>©2023 Logo All right reserved</StyledFooterCopy>
         <StyledFooterLink>
           <StyledItem>
-            <StyledLink color>Privacy Policy</StyledLink>
+            <StyledLink color="true">Privacy Policy</StyledLink>
           </StyledItem>
           <StyledItem>
-            <StyledLink color>Terms of Service</StyledLink>
+            <StyledLink color="true">Terms of Service</StyledLink>
           </StyledItem>
         </StyledFooterLink>
       </StyledFooterLine>

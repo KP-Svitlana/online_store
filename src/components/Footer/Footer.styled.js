@@ -123,6 +123,9 @@ export const StyledLink = styled(Link)`
 export const StyledFooterNavMobile = styled.nav`
   display: flex;
   flex-direction: column;
+
+  border-bottom: 1px solid ${paletteGray.Gray_40};
+
   @media ${device.tablet} {
     display: none;
   }
@@ -130,10 +133,9 @@ export const StyledFooterNavMobile = styled.nav`
 export const StyledDropDown = styled.select`
   height: 50px;
   padding: 16px;
+  border: none;
 
-  // background-color: #ebd8ff;
-  // border-radius: 10px;
-  border-top-color: ${paletteGray.Gray_40};
+  border-top: 1px solid ${paletteGray.Gray_40};
   border-right-color: transparent;
   border-left-color: transparent;
   border-bottom-color: transparent;
