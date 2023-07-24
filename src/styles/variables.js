@@ -3,10 +3,12 @@ export const colors = {
   primary_background: "#FFFDFA",
   secondary_dark: "#326732",
   secondary_Background: "#F8F2E8",
+  btn_yellow:'#F9B145',
 };
 
 export const paletteGray = {
   text: "#121412",
+  Black_btn:'#121412',
   Gray_80: "#3E4C59",
   Gray_60: "#616E7C",
   Gray_40: "#9AA5B1",
@@ -22,3 +24,9 @@ export const systemColors = {
   warning: "#FFCC00",
   success: "#34C759",
 };
+
+export const transition={
+  transitionDuration: '250ms',
+  cubicBezie: 'cubic-bezier(0.4, 0, 0.2, 1)',
+};
+
