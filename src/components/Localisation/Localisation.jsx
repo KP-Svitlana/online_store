@@ -5,8 +5,6 @@ import { Select } from "./Localisation.styled";
 
 export const Localisation = () => {
 
-
-
     const languages = [
         {code: 'UA'},
         {code: 'EN'},
