@@ -12,6 +12,7 @@ export const StyledFooter = styled.footer`
   padding-bottom: 20px;
 
   @media ${device.tablet} {
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 0;
   }
@@ -26,21 +27,17 @@ export const StyledFooter = styled.footer`
 `;
 export const StyledAddressWrap = styled.div`
   display: flex;
-
   flex-direction: column;
   gap: 32px;
-  justify-content: center;
-  margin-right: 220px;
-  order: 0;
 
   @media ${device.tablet} {
     gap: 36px;
-
     order: 1;
   }
 
   @media ${device.desktop} {
     order: 0;
+    margin-right: 220px;
   }
 `;
 
@@ -48,8 +45,6 @@ export const StyledAddressMenu = styled.address`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: start;
-  justify-content: center;
 `;
 export const StyledAddressText = styled.p`
   font-size: 14px;
@@ -61,19 +56,10 @@ export const StyledAddressText = styled.p`
 `;
 
 export const StyledFooterNav = styled.nav`
-  //   display: flex;
-  //   flex-direction: row;
-  //   gap: 66px;
-  //   align-items: flex-start;
-  //   justify-content: flex-start;
-  //   flex-shrink: 0;
-  //   flex-wrap: wrap;
-  //   margin-left: auto;
-  //   @media (max-width: 768px) {
-  //     margin-top: auto;
-  //     margin-left: 0;
-  //   }
+  display: none;
+
   @media ${device.tablet} {
+    display: block;
     order: 3;
     margin-top: 80px;
   }
@@ -89,13 +75,17 @@ export const StyledNavList = styled.ul`
   gap: 86px;
   order: 0;
 
-  //   @media ${device.tablet} {
-  //     order: 3;
-  //   }
+  @media ${device.tablet} {
+    gap: 120px;
+  }
 
-  //   @media ${device.desktop} {
-  //     order: 0;
-  //   }
+  @media ${device.desktop} {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 86px;
+    order: 0;
+  }
 `;
 
 export const StyledNavListItem = styled.li`
@@ -130,19 +120,50 @@ export const StyledLink = styled(Link)`
   //   ${(props) => (props.time ? "1.5" : "1.3")}
 `;
 
+export const StyledFooterNavMobile = styled.nav`
+  display: flex;
+  flex-direction: column;
+  @media ${device.tablet} {
+    display: none;
+  }
+`;
+export const StyledDropDown = styled.select`
+  height: 50px;
+  padding: 16px;
+
+  // background-color: #ebd8ff;
+  // border-radius: 10px;
+  border-top-color: ${paletteGray.Gray_40};
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+
+  color: ${paletteGray.text};
+
+  :focus-visible {
+    outline: 0px solid transparent;
+  }
+`;
+
 export const StyledFooterIconWrap = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 64px;
-  margin-left: 86px;
+  gap: 48px;
   order: 0;
 
   @media ${device.tablet} {
-    margin-left: 0;
+    margin-left: 220px;
     order: 2;
   }
   @media ${device.desktop} {
     order: 0;
+    margin-left: 86px;
+    gap: 64px;
   }
 `;
 export const StyledFooterLine = styled.div`

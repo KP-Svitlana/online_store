@@ -15,6 +15,8 @@ import {
   StyledFooterLine,
   StyledFooterCopy,
   StyledFooterLink,
+  StyledFooterNavMobile,
+  StyledDropDown,
 } from "./Footer.styled";
 import logoImage from "/src/assets/img/logo.png";
 import { SocialList } from "../SocialList/SocialList";
@@ -128,6 +130,42 @@ export const Footer = () => {
           </StyledNavListItem>
         </StyledNavList>
       </StyledFooterNav>
+
+      <StyledFooterNavMobile>
+        <StyledDropDown>
+          <option value="help" autofocus>
+            ДОПОМОГА
+          </option>
+          <option value="order">Оформлення замовлень</option>
+          <option value="delivery">Доставка і оплата</option>
+          <option value="return">Гарантія та повернення</option>
+          <option value="conditions">Умови акцій</option>
+          <option value="question">FAQ</option>
+          <option value="terms">Terms&Conditions</option>
+          <option value="policy">Політика конфеденційності</option>
+        </StyledDropDown>
+        <StyledDropDown>
+          <option value="help" autofocus>
+            МАГАЗИН
+          </option>
+          <option value="new">Новинки</option>
+          <option value="catalogue">Каталог</option>
+          <option value="collections">Колекції</option>
+          <option value="footwear">Взуття</option>
+          <option value="accessories">Аксесуари</option>
+          <option value="sale">Розпродаж</option>
+        </StyledDropDown>
+        <StyledDropDown>
+          <option value="help" autofocus>
+            КОМПАНІЯ
+          </option>
+          <option value="about us">Про нас</option>
+          <option value="contscts">Контакти</option>
+          <option value="reviews">Відгуки</option>
+          <option value="offer">Оферта</option>
+          <option value="blog">Блог</option>
+        </StyledDropDown>
+      </StyledFooterNavMobile>
 
       <StyledFooterIconWrap>
         <SocialList />
