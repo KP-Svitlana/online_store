@@ -14,7 +14,7 @@ export const StyledFooter = styled.footer`
   @media ${device.tablet} {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 80px;
   }
 
   @media ${device.desktop} {
@@ -117,7 +117,6 @@ export const StyledItem = styled.li`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${(props) => (props.color ? `${paletteGray.Gray_80}` : "inherit")};
-  //   ${(props) => (props.time ? "1.5" : "1.3")}
 `;
 
 export const StyledFooterNavMobile = styled.nav`
@@ -152,6 +151,14 @@ export const StyledDropDown = styled.select`
   }
 `;
 
+export const StyledDropDownOption = styled.option`
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  color: ${paletteGray.text};
+`;
+
 export const StyledFooterIconWrap = styled.div`
   display: flex;
   flex-direction: column;
@@ -159,23 +166,22 @@ export const StyledFooterIconWrap = styled.div`
   order: 0;
 
   @media ${device.tablet} {
-    margin-left: 220px;
+    margin-left: 140px;
+
     order: 2;
   }
   @media ${device.desktop} {
     order: 0;
     margin-left: 86px;
+    margin-right: 0;
     gap: 64px;
   }
 `;
 export const StyledFooterLine = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
   width: 100%;
-  margin-top: 60px;
 
   :before {
     content: "";
@@ -187,7 +193,11 @@ export const StyledFooterLine = styled.div`
 
   @media ${device.tablet} {
     order: 4;
-    margin-top: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   @media ${device.desktop} {

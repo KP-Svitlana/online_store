@@ -17,6 +17,7 @@ import {
   StyledFooterLink,
   StyledFooterNavMobile,
   StyledDropDown,
+  StyledDropDownOption,
 } from "./Footer.styled";
 import logoImage from "/src/assets/img/logo.png";
 import { SocialList } from "../SocialList/SocialList";
@@ -133,37 +134,53 @@ export const Footer = () => {
 
       <StyledFooterNavMobile>
         <StyledDropDown>
-          <option value="help" autoFocus>
+          <StyledDropDownOption value="help" autoFocus>
             ДОПОМОГА
-          </option>
-          <option value="order">Оформлення замовлень</option>
-          <option value="delivery">Доставка і оплата</option>
-          <option value="return">Гарантія та повернення</option>
-          <option value="conditions">Умови акцій</option>
-          <option value="question">FAQ</option>
-          <option value="terms">Terms&Conditions</option>
-          <option value="policy">Політика конфеденційності</option>
+          </StyledDropDownOption>
+          <StyledDropDownOption value="order">
+            Оформлення замовлень
+          </StyledDropDownOption>
+          <StyledDropDownOption value="delivery">
+            Доставка і оплата
+          </StyledDropDownOption>
+          <StyledDropDownOption value="return">
+            Гарантія та повернення
+          </StyledDropDownOption>
+          <StyledDropDownOption value="conditions">
+            Умови акцій
+          </StyledDropDownOption>
+          <StyledDropDownOption value="question">FAQ</StyledDropDownOption>
+          <StyledDropDownOption value="terms">
+            Terms&Conditions
+          </StyledDropDownOption>
+          <StyledDropDownOption value="policy">
+            Політика конфеденційності
+          </StyledDropDownOption>
         </StyledDropDown>
         <StyledDropDown>
-          <option value="help" autoFocus>
+          <StyledDropDownOption value="help" autoFocus>
             МАГАЗИН
-          </option>
-          <option value="new">Новинки</option>
-          <option value="catalogue">Каталог</option>
-          <option value="collections">Колекції</option>
-          <option value="footwear">Взуття</option>
-          <option value="accessories">Аксесуари</option>
-          <option value="sale">Розпродаж</option>
+          </StyledDropDownOption>
+          <StyledDropDownOption value="new">Новинки</StyledDropDownOption>
+          <StyledDropDownOption value="catalogue">Каталог</StyledDropDownOption>
+          <StyledDropDownOption value="collections">
+            Колекції
+          </StyledDropDownOption>
+          <StyledDropDownOption value="footwear">Взуття</StyledDropDownOption>
+          <StyledDropDownOption value="accessories">
+            Аксесуари
+          </StyledDropDownOption>
+          <StyledDropDownOption value="sale">Розпродаж</StyledDropDownOption>
         </StyledDropDown>
         <StyledDropDown>
-          <option value="help" autoFocus>
+          <StyledDropDownOption value="help" autoFocus>
             КОМПАНІЯ
-          </option>
-          <option value="about us">Про нас</option>
-          <option value="contscts">Контакти</option>
-          <option value="reviews">Відгуки</option>
-          <option value="offer">Оферта</option>
-          <option value="blog">Блог</option>
+          </StyledDropDownOption>
+          <StyledDropDownOption value="about us">Про нас</StyledDropDownOption>
+          <StyledDropDownOption value="contscts">Контакти</StyledDropDownOption>
+          <StyledDropDownOption value="reviews">Відгуки</StyledDropDownOption>
+          <StyledDropDownOption value="offer">Оферта</StyledDropDownOption>
+          <StyledDropDownOption value="blog">Блог</StyledDropDownOption>
         </StyledDropDown>
       </StyledFooterNavMobile>
 
