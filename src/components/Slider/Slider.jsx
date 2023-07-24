@@ -1,7 +1,8 @@
-import { useState,useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import slide1 from '../../assets/img/SignUpPage_desktop_1x.png';
 import slide2 from '../../assets/img/SignUpPage_desktop_2x.png';
 import './style.css';
+
 const Slider = () => {
   const slides = [
     {
@@ -36,6 +37,9 @@ const Slider = () => {
           <div
             key={index}
             className={`slide ${index === currentIndex ? 'active' : ''}`}
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
           >
             <img src={imageUrl} alt={`Slide ${index + 1}`} />
             <div className="slide-text">{text}</div>
@@ -43,8 +47,8 @@ const Slider = () => {
         ))}
       </div>
       <div className="slider-controls">
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
+        <button className="slider-prev" onClick={prevSlide}>Previous</button>
+        <button className="slider-next" onClick={nextSlide}>Next</button>
       </div>
     </div>
   );
