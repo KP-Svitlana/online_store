@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Select } from "./Localisation.styled";
 
 
@@ -12,7 +12,16 @@ export const Localisation = () => {
 
     const [code, setCode ] = useState('UA');
 
-    const handeChange = (e) => {
+
+    useEffect(() => {
+        if (localStorage.getItem('COUNTRY_CODE')) {
+            const prevCode = localStorage.getItem('COUNTRY_CODE')
+            setCode(prevCode);
+        } 
+    }, []);
+
+    const handleChange = (e) => {
+        localStorage.setItem('COUNTRY_CODE', e.target.value);
         setCode(e.target.value);
     }
 
@@ -23,7 +32,7 @@ export const Localisation = () => {
     })
 
     return (
-        <Select value={code} onChange={handeChange}>
+        <Select onChange={handleChange} value={code}>
             {optionLang}
         </Select>
     )
