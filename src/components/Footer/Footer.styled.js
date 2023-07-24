@@ -17,12 +17,12 @@ export const StyledFooter = styled.footer`
     gap: 80px;
   }
 
-  @media ${device.desktop} {
+  @media ${device.desktopSmall} {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
     padding-top: 120px;
+    gap: 0;
   }
 `;
 export const StyledAddressWrap = styled.div`
@@ -35,8 +35,12 @@ export const StyledAddressWrap = styled.div`
     order: 1;
   }
 
-  @media ${device.desktop} {
+  @media ${device.desktopSmall} {
     order: 0;
+    margin-right: 72px;
+  }
+
+  @media ${device.desktop} {
     margin-right: 220px;
   }
 `;
@@ -61,13 +65,14 @@ export const StyledFooterNav = styled.nav`
   @media ${device.tablet} {
     display: block;
     order: 3;
-    margin-top: 80px;
   }
-  @media ${device.desktop} {
+
+  @media ${device.desktopSmall} {
     order: 0;
     margin-top: 0;
   }
 `;
+
 export const StyledNavList = styled.ul`
   display: flex;
   flex-direction: row;
@@ -170,12 +175,19 @@ export const StyledFooterIconWrap = styled.div`
 
     order: 2;
   }
-  @media ${device.desktop} {
+  @media ${device.desktopSmall} {
     order: 0;
-    margin-left: 86px;
+    margin-left: 64px;
     margin-right: 0;
     gap: 64px;
   }
+
+  // @media ${device.desktop} {
+  //   order: 0;
+  //   margin-left: 64px;
+  //   margin-right: 0;
+  //   gap: 64px;
+  // }
 `;
 export const StyledFooterLine = styled.div`
   display: flex;
@@ -200,7 +212,7 @@ export const StyledFooterLine = styled.div`
     justify-content: space-between;
   }
 
-  @media ${device.desktop} {
+  @media ${device.desktopSmall} {
     margin-top: 100px;
     order: 0;
   }
