@@ -11,6 +11,6 @@ export const StyledContainer = styled.div`
   }
 
   @media ${device.desktop} {
-    padding: 0 80px;
+    padding: 0;
   }
 `;
