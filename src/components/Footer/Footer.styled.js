@@ -1,203 +1,200 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+import { paletteGray } from "../../styles/variables";
+import { device } from "../../styles/mediaVeriables";
 
 export const StyledFooter = styled.footer`
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    font-size: 14px;
-    align-content: flex-end;
-    width: 100%;
-    min-height: 100vh;
-    padding: 0 30px 20px 30px;
-`;
-export const StyledFooterMenu = styled.div`
-    display: flex;
-    gap: 36px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    flex-wrap: wrap;
     flex-direction: column;
-    @media (max-width: 768px) {
+    gap: 60px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    @media ${device.tablet} {
         flex-direction: row;
-        justify-content: flex-start;
-        gap: 36px;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+    @media ${device.desktopSmall} {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 120px;
+        gap: 0;
     }
 `;
-export const StyledFooterLinks = styled.a`
-    text-align: left;
-    text-decoration: none;
-    color: inherit;
-    position: relative;
+export const StyledFooterAddressContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media ${device.tablet} {
+        gap: 36px;
+        order: 1;
+    }
+    @media ${device.desktopSmall} {
+        order: 0;
+        margin-right: 72px;
+    }
+    @media ${device.desktop} {
+        margin-right: 220px;
+    }
 `;
-export const StyledFooterImage = styled.img`
-`;
-export const StyledFooterContacts = styled.address`
+export const StyledFooterAddress = styled.address`
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
-    justify-content: center;
-    line-height: 1.3;
 `;
-export const StyledFooterAddress = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-`;
+
 export const StyledFooterAddressText = styled.p`
-    text-align: left;
-`;
-export const StyledFooterPhone = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-`;
-export const StyledFooterPhoneNum = styled.p`
-    text-align: left;
-`;
-export const StyledFooterEmail = styled.div`
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-`;
-export const StyledFooterEmailExa = styled.p`
-    text-align: left;
-`;
-export const StyledFooterTime = styled.div`
-    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: ${(props) => (props.time ? "1.5" : "1.3")};
+    color: ${paletteGray.text};
 `;
 export const StyledFooterNav = styled.nav`
-    display: flex;
-    flex-direction: row;
-    gap: 66px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    margin-left: auto;
-    @media (max-width: 768px) { 
-        margin-top: auto;
-        margin-left: 0;
+    display: none;
+    @media ${device.tablet} {
+        display: block;
+        order: 3;
+    }
+    @media ${device.desktopSmall} {
+        order: 0;
+        margin-top: 0;
     }
 `;
-export const StyledFooterShop = styled.div`
+export const StyledFooterList = styled.ul`
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    gap: 24px;
+    flex-direction: row;
+    list-style: none;
+    gap: 86px;
+    order: 0;
+
+    @media ${device.tablet} {
+        gap: 120px;
+    }
+    @media ${device.desktop} {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 86px;
+        order: 0;
+    }
 `;
-export const StyledFooterShopTitle = styled.h1`
-    text-align: left;
+export const StyledFooterMenuItem = styled.li`
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.25;
     font-size: 14px;
+    letter-spacing: 1px;
+    color: ${paletteGray.text};
+    text-transform: uppercase;
 `;
-export const StyledFooterMenuItem = styled.ul`
+export const StyledFooterListItem = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 14px;
+    margin-top: 24px;
+    text-transform: none;
+    list-style: none;
 `;
 export const StyledFooterItemMenu = styled.li`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    color: ${paletteGray.text};
 `;
-export const StyledFooterCompany = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
+export const StyledNavLink = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => (props.color ? `${paletteGray.Gray_80}` : "inherit")};
 `;
-export const StyledFooterHelp = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
+export const StyledFooterListMobile = styled.nav`
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid ${paletteGray.Gray_40};
+  @media ${device.tablet} {
+    display: none;
+  }
+`;
+export const StyledFooterDrop = styled.select`
+  height: 50px;
+  padding: 16px;
+  border: none;
+  border-top: 1px solid ${paletteGray.Gray_40};
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: ${paletteGray.text};
+
+  :focus-visible {
+    outline: 0px solid transparent;
+  }
+`;
+export const StyledFooterMenuDown = styled.option`
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  color: ${paletteGray.text};
 `;
 export const StyledFooterIconItem = styled.div`
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  order: 0;
+
+  @media ${device.tablet} {
+    margin-left: 140px;
+    order: 2;
+  }
+  @media ${device.desktopSmall} {
+    order: 0;
+    margin-left: 64px;
+    margin-right: 0;
     gap: 64px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
+  }
 `;
 export const StyledFooterLine = styled.div`
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+
+  :before {
+    content: "";
+    width: 100%;
+    margin-bottom: 24px;
+    height: 1px;
+    background: ${paletteGray.Gray_40};
+  }
+  @media ${device.tablet} {
+    order: 4;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    position: relative;
-    margin-top: 80px;
+  }
+  @media ${device.desktopSmall} {
+    margin-top: 100px;
+    order: 0;
+  }
 `;
-export const StyledLineFooter = styled.div`
-    border-style: solid;
-    border-color: #515151;
-    border-width: 1px 0 0 0;
-    flex-shrink: 0;
-    width: 100%;
-    position: relative;
-    margin-bottom: 24px;
-`;
-export const StyledFooterCopy = styled.div`
-    color: #515151;
-    text-align: left;
-    position: relative;
+export const StyledFooterCopy = styled.p`
+  color: ${paletteGray.text};
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
 `;
 export const StyledFooterLink = styled.ul`
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    list-style-type: none;
-`;
-export const StyledFooterPrivacy = styled.li`
-    color: #515151;
-    text-align: left;
-    position: relative;
-`;
-export const StyledFooterTerms = styled.li`
-    color: #515151;
-    text-align: left;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: none;
 `;

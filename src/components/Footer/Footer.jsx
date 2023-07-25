@@ -1,111 +1,139 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { StyledFooter, StyledFooterMenu, StyledFooterLinks,StyledFooterIconItem, StyledFooterImage, StyledFooterContacts, StyledFooterAddress, StyledFooterAddressText,StyledFooterPhone,StyledFooterPhoneNum,StyledFooterEmail,StyledFooterEmailExa,StyledFooterTime,StyledFooterNav,StyledFooterShop,StyledFooterShopTitle,StyledFooterMenuItem,StyledFooterItemMenu,StyledFooterCompany,StyledFooterHelp,StyledFooterLine,StyledLineFooter,StyledFooterCopy,StyledFooterLink,StyledFooterPrivacy,StyledFooterTerms  } from "./Footer.styled";
-import logoImage from '/src/assets/img/logo.png';
+import { StyledFooter, StyledFooterCopy, StyledFooterListItem, StyledFooterLink, StyledFooterMenuItem, StyledFooterNav, StyledFooterItemMenu, StyledFooterAddressContainer, StyledFooterList, StyledFooterMenuDown, StyledNavLink, StyledFooterListMobile, StyledFooterAddress, StyledFooterAddressText, StyledFooterDrop, StyledFooterIconItem, StyledFooterLine } from "./Footer.styled";
 import { SocialList } from "../SocialList/SocialList";
-import { PaymentList } from '../PaymentList/PaymentList';
+import { PaymentList } from "../PaymentList/PaymentList";
+import { Logo } from "../Logo/Logo";
 
 export const Footer = () => {
   return (
     <StyledFooter>
-      <StyledFooterMenu>
-        <StyledFooterLinks>
-          <StyledFooterImage src={logoImage} alt="Logo"/>
-        </StyledFooterLinks>
-        <StyledFooterContacts>
-          <StyledFooterAddress>
-            <StyledFooterAddressText>Київ, вул. Шевченка, 21</StyledFooterAddressText>
-          </StyledFooterAddress>
-          <StyledFooterPhone>
-            <StyledFooterPhoneNum>+38 (800) 000-000</StyledFooterPhoneNum>
-          </StyledFooterPhone>
-          <StyledFooterEmail>
-            <StyledFooterEmailExa>example@gmail.com</StyledFooterEmailExa>
-          </StyledFooterEmail>
-          <StyledFooterTime>пн-пт: з 9:00 до 18:00 <br />сб-нд: з 10:00 до 17:00</StyledFooterTime>
-        </StyledFooterContacts>
-      </StyledFooterMenu>
+      <StyledFooterAddressContainer>
+        <Logo />
+        <StyledFooterAddress>
+          <StyledFooterAddressText>Київ, вул. Шевченка, 21</StyledFooterAddressText>
+          <StyledFooterAddressText>+38 (800) 000-000</StyledFooterAddressText>
+          <StyledFooterAddressText>example@gmail.com</StyledFooterAddressText>
+          <StyledFooterAddressText time>пн-пт: з 9:00 до 18:00 <br />сб-нд: з 10:00 до 17:00</StyledFooterAddressText>
+        </StyledFooterAddress>
+      </StyledFooterAddressContainer>
+
       <StyledFooterNav>
-        <StyledFooterShop>
-          <StyledFooterShopTitle>МАГАЗИН</StyledFooterShopTitle>
-          <StyledFooterMenuItem>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Новинки</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Каталог</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Колекції</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Взуття</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Аксесуари</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Розпродаж</NavLink>
-            </StyledFooterItemMenu>
+        <StyledFooterList>
+          <StyledFooterMenuItem>Магазин
+            <StyledFooterListItem>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Новинки</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Каталог</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Колекції</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Взуття</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Аксесуари</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Розпродаж</StyledNavLink>
+              </StyledFooterItemMenu>
+            </StyledFooterListItem>
           </StyledFooterMenuItem>
-        </StyledFooterShop>
-        <StyledFooterCompany>
-          <StyledFooterShopTitle>КОМПАНІЯ</StyledFooterShopTitle>
-          <StyledFooterMenuItem>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Про нас</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Контакти</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Відгуки</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Оферта</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Блог</NavLink>
-            </StyledFooterItemMenu>
+        
+          <StyledFooterMenuItem>Компанія
+            <StyledFooterListItem>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Про нас</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Контакти</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Відгуки</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Оферта</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Блог</StyledNavLink>
+              </StyledFooterItemMenu>
+            </StyledFooterListItem>
           </StyledFooterMenuItem>
-        </StyledFooterCompany>
-        <StyledFooterHelp>
-          <StyledFooterShopTitle>ДОПОМОГА</StyledFooterShopTitle>
-          <StyledFooterMenuItem>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Оформлення замовлень</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Доставка і оплата</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Гарантія та повернення</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Умови акцій</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">FAQ</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Terms&amp;Conditions</NavLink>
-            </StyledFooterItemMenu>
-            <StyledFooterItemMenu>
-              <NavLink to="#" activeclassname="active">Політика конфіденційності</NavLink>
-            </StyledFooterItemMenu>
+
+          <StyledFooterMenuItem>Допомога
+            <StyledFooterListItem>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Оформлення замовлень</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Доставка і оплата</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Гарантія та повернення</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Умови акцій</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">FAQ</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Terms&Conditions</StyledNavLink>
+              </StyledFooterItemMenu>
+              <StyledFooterItemMenu>
+                <StyledNavLink to="#">Політика конфеденційності</StyledNavLink>
+              </StyledFooterItemMenu>
+            </StyledFooterListItem>
           </StyledFooterMenuItem>
-        </StyledFooterHelp>
-        <StyledFooterIconItem>
-          <SocialList />
-          <PaymentList />
-        </StyledFooterIconItem>
+        </StyledFooterList>
       </StyledFooterNav>
+
+      <StyledFooterListMobile>
+        <StyledFooterDrop>
+          <StyledFooterMenuDown value="help" autoFocus>ДОПОМОГА</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="order">Оформлення замовлень</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="delivery">Доставка і оплата</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="return">Гарантія та повернення</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="conditions">Умови акцій</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="question">FAQ</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="terms">Terms&amp;Conditions</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="policy">Політика конфіденційності</StyledFooterMenuDown>
+        </StyledFooterDrop>
+        <StyledFooterDrop>
+          <StyledFooterMenuDown value="help" autoFocus>МАГАЗИН</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="catalogue">Каталог</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="collections">Колекції</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="footwear">Взуття</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="accessories">Аксесуари</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="sale">Розпродаж</StyledFooterMenuDown>
+        </StyledFooterDrop>
+
+        <StyledFooterDrop>
+          <StyledFooterMenuDown value="help" autoFocus>КОМПАНІЯ</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="about us">Про нас</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="contacts">Контакти</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="reviews">Відгуки</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="offer">Оферта</StyledFooterMenuDown>
+          <StyledFooterMenuDown value="blog">Блог</StyledFooterMenuDown>
+        </StyledFooterDrop>
+      </StyledFooterListMobile>
+
+      <StyledFooterIconItem>
+        <SocialList />
+        <PaymentList />
+      </StyledFooterIconItem>            
+
       <StyledFooterLine>
-        <StyledLineFooter></StyledLineFooter>
         <StyledFooterCopy>©2023 Logo All right reserved</StyledFooterCopy>
         <StyledFooterLink>
-          <StyledFooterPrivacy>Privacy Policy</StyledFooterPrivacy>
-          <StyledFooterTerms>Terms of Service</StyledFooterTerms>
+          <StyledFooterItemMenu>
+            <StyledNavLink color="true">Privacy Policy</StyledNavLink>
+          </StyledFooterItemMenu>
+          <StyledFooterItemMenu>
+            <StyledNavLink color="true">Terms of Service</StyledNavLink>
+          </StyledFooterItemMenu>
         </StyledFooterLink>
       </StyledFooterLine>
     </StyledFooter>
