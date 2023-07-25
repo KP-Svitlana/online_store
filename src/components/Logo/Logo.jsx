@@ -4,7 +4,7 @@ export const Logo = () => {
     const logoItems = [
         {
             url: '/',
-            src: 'source for img',
+            src: '/src/assets/img/logo.png',
             alt: 'Logo'
         }
     ];
