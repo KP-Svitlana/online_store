@@ -4,7 +4,7 @@ import {
     ProductImgSt,
     ProductTitleSt,
     ProductPriceSt,
-    SpanPriceSt
+    SpanPriceSt, BtnBoxSt, ItemBoxSt
 } from './ProductItem.styled.js';
 import productImg from '../../img/product_img.png'
 import {BtnAddToBasket} from "../Button/BtnAddToBasket.jsx";
@@ -29,15 +29,20 @@ export const ProductItem = ({item}) => {
                             src={productImg}
                             alt={product || 'Product'}
                         />}
-                    <ProductTitleSt>{product}</ProductTitleSt>
-                    <ColorList colors={arrColors}/>
-                    {newPrise
-                        ? <>
-                            <ProductPriceSt>{newPrise} грн</ProductPriceSt>
-                            <OldProductPriceSt>{priceUan} грн</OldProductPriceSt>
-                        </>
-                        : <ProductPriceSt>{priceUan} <SpanPriceSt>грн</SpanPriceSt></ProductPriceSt>}
-                    <BtnAddToBasket text='До кошика'/>
+
+                    <ItemBoxSt>
+                        <ProductTitleSt>{product}</ProductTitleSt>
+                        <ColorList colors={arrColors}/>
+                        {newPrise
+                            ? <>
+                                <ProductPriceSt>{newPrise} грн</ProductPriceSt>
+                                <OldProductPriceSt>{priceUan} грн</OldProductPriceSt>
+                            </>
+                            : <ProductPriceSt>{priceUan} <SpanPriceSt>грн</SpanPriceSt></ProductPriceSt>}
+                        <BtnBoxSt>
+                            <BtnAddToBasket text='До кошика'/>
+                        </BtnBoxSt>
+                    </ItemBoxSt>
                 </ProductItemSt>
             }
         </>

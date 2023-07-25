@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 import { colors, paletteGray, transition } from "../../styles/variables";
+import {device} from '../../styles/mediaVeriables.js';
+
 
 export const StyledButton = styled.button`
   width: 100%;
@@ -16,7 +18,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   transition: background-color ${transition.transitionDuration} ${transition.cubicBezie};
 
-  @media (min-width: 760px) {
+  @media ${device.tablet} {
     max-width: 300px;
   }
   
@@ -29,7 +31,7 @@ export const StyledButton = styled.button`
 export const BtnAddToBasketSt =styled.button`
   width: 100%;
   border: 1px solid ${paletteGray.text};
-  padding: 14px 56px;
+  padding: 12px 16px;
   justify-content: center;
   align-items: center;
   color: ${paletteGray.text};
@@ -38,14 +40,14 @@ export const BtnAddToBasketSt =styled.button`
   line-height: 1.3;
   letter-spacing: 1px;
   cursor: pointer;
-  transition:border ${transition.transitionDuration} ${transition.cubicBezie};
+  transition: border ${transition.transitionDuration} ${transition.cubicBezie};
 
-  @media (min-width: 760px) {
-    padding: 16px 64px;
+  @media ${device.tablet} {
+    padding: 14px 56px;
   }
 
   :hover,
   :focus {
-    border:1px solid ${colors.secondary_dark};
+    border: 1px solid ${colors.secondary_dark};
   }
 `;

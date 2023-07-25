@@ -8,7 +8,6 @@ export const colors = {
 
 export const paletteGray = {
   text: "#121412",
-  Black_btn:'#121412',
   Gray_80: "#3E4C59",
   Gray_60: "#616E7C",
   Gray_40: "#9AA5B1",
