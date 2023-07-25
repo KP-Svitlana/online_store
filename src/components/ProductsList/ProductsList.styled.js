@@ -1,6 +1,15 @@
 import styled from "@emotion/styled";
 import {paletteGray} from '../../styles/variables.js';
 
+export const ProductsSectionSt = styled.section`
+  padding: 60px 0;
+
+  @media ${device.desktop} {
+    padding: 80px 0;
+  }
+`;
+
+
 export const ProductsTitleSt = styled.h2`
   color: ${paletteGray.text};
   font-family: "Gothic A1", sans-serif;
