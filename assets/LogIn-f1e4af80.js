@@ -1,1 +1,0 @@
-import{j as n,N as s}from"./index-bdf571ff.js";const i=()=>n.jsxs(n.Fragment,{children:[n.jsx("h1",{children:"Login Page"}),n.jsx(s,{to:"/",style:{marginRight:"10px"},children:"Home"}),n.jsx(s,{to:"/signup",children:"Signup"})]});export{i as default};
